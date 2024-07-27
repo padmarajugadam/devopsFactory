@@ -1,6 +1,2 @@
-# example-tomcat-war
+# Creating Lab for Kubernetes cluster with terraform 
 
-This is an example java build and deploy of the resulting
-war file to a tomcat 7 server.
-
-good luck
