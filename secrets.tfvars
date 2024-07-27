@@ -1,0 +1,7 @@
+accesskey = "AK*****************"
+secretkey = "/SutF***************"
+ami = "ami-04a81a99f5ec58529"
+key_name = "k8***"
+public_subnets = "172.1.0.0/16"
+public_snets = "0.0.0.0/0"
+keypath = "k8admin.pem"
