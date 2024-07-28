@@ -1,0 +1,21 @@
+- hosts: all
+  become: yes
+  tasks:
+  - name: Install Docker
+    include_role:
+      name: geerlingguy.docker
+
+  - name: Initialize the Kubernetes master
+    command: kubeadm init --pod-network-cidr=10.240.0.0/12
+    when: inventory_hostname == "kubernetes-master"
+
+  - name: Setup kubeconfig for the master node
+    command: >
+      mkdir -p $HOME/.kube
+      && sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+      && sudo chown $(id -u):$(id -g) $HOME/.kube/config
+    when: inventory_hostname == "kubernetes-master"
+
+  - name: Join the nodes to the Kubernetes cluster
+    command: "{{ hostvars['kubernetes-master']['join_command'] }}"
+    when: inventory_hostname != "kubernetes-master"
