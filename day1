@@ -1,0 +1,28 @@
+GIT
+  GIT is a version control tool which helps us to track the history.
+  Command:
+  git pull
+  expl: git pull will help to update our working copies with remote changes.
+    ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    remote: Enumerating objects: 206, done.
+remote: Counting objects: 100% (206/206), done.
+remote: Compressing objects: 100% (143/143), done.
+remote: Total 206 (delta 56), reused 183 (delta 46), pack-reused 0
+Receiving objects: 100% (206/206), 1.51 MiB | 178.00 KiB/s, done.
+Resolving deltas: 100% (56/56), completed with 2 local objects.
+From https://github.com/padmarajugadam/devopsFactory
+   064c9b8..35b04ca  pipeline             -> origin/pipeline
+   7727c73..9cb91a3  docker               -> origin/docker
+ * [new branch]      docker-jenkinsfile   -> origin/docker-jenkinsfile
+ * [new branch]      k8-ansible-terraform -> origin/k8-ansible-terraform
+ * [new branch]      k8withTerraform      -> origin/k8withTerraform
+   e3814a6..6ab2f25  main                 -> origin/main
+   7afeb72..6c54641  mavennexus           -> origin/mavennexus
+ * [new branch]      sonarqube            -> origin/sonarqube
+ * [new branch]      testcommentPr        -> origin/testcommentPr
+Updating 064c9b8..35b04ca
+Fast-forward
+ Jenkinsfile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  
